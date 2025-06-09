@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Fortress 2 Info Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2c2f33;
+      color: #f5f5f5;
+      margin: 0;
+    }
+
+    header {
+      background-color: #7289da;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #23272a;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      border-bottom: 2px solid #7289da;
+      padding-bottom: 5px;
+    }
+
+    .class-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .class-card {
+      background-color: #36393f;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .class-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #23272a;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .music-control {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .music-control button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .music-control button:hover {
+      background-color: #5a6ebf;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Team Fortress 2</h1>
+  <p>The ultimate class-based multiplayer shooter by Valve</p>
+</header>
+
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#classes">Classes</a>
+  <a href="#download">Download</a>
+</nav>
+
+<section id="overview">
+  <h2>Game Overview</h2>
+  <p>
+    Team Fortress 2 is a team-based multiplayer shooter where players choose from 9 unique classes, each with its own strengths and roles.
+    The game emphasizes strategy, coordination, and good old-fashioned chaos.
+  </p>
+</section>
+
+<section id="classes">
+  <h2>All Classes</h2>
+  <div class="class-grid">
+    <div class="class-card">
+      <h3>Scout</h3>
+      <img src="https://static.wikia.nocookie.net/teamfortress/images/4/4f/Scout_3D.jpg" alt="Scout">
+      <p>Fast and agile. Captures points twice as fast.</p>
+    </div>
+    <div class="class-card">
+      <h3>Soldier</h3>
+      <img src="https://static.wikia.nocookie.net/teamfortress/images/d/d5/Soldier_3D.jpg" alt="Soldier">
+      <p>Slow but powerful. Uses a rocket launcher and rocket jumps.</p>
+    </div>
+    <div class="class-card">
+      <h3>Pyro</h3>
+      <img src="https://static.wikia.nocookie.net/teamfortress/images/9/9b/Pyro_3D.jpg" alt="Pyro">
+      <p>Wields a flamethrower. Loves fire. Unclear if insane.</p>
+    </div>
+    <div class="class-card">
+      <h3>Demoman</h3>
+      <img src="https://static.wikia.nocookie.net/teamfortress/images/7/7e/Demoman_3D.jpg" alt="Demoman">
+      <p>Uses sticky bombs and grenades to control areas.</p>
+    </div>
+    <div class="class-card">
+      <h3>Heavy</h3>
+      <img src="https://static.wikia.nocookie.net/teamfortress/images/b/b5/Heavy_3D.jpg" alt="Heavy">
+      <p>Big man with a minigun. Lots of health and firepower.</p>
+    </div>
+    <div class="class-card">
+      <h3>Engineer</h3>
+      <img src="https://static.wikia.nocookie.net/teamfortress/images/e/ef/Engineer_3D.jpg" alt="Engineer">
+      <p>Builds turrets, dispensers, and teleporters for the team.</p>
+    </div>
+    <div class="class-card">
+      <h3>Medic</h3>
+      <img src="https://static.wikia.nocookie.net/teamfortress/images/f/fc/Medic_3D.jpg" alt="Medic">
+      <p>Heals teammates. Can unleash an ÜberCharge for invincibility.</p>
+    </div>
+    <div class="class-card">
+      <h3>Sniper</h3>
+      <img src="https://static.wikia.nocookie.net/teamfortress/images/4/4c/Sniper_3D.jpg" alt="Sniper">
+      <p>Takes out enemies from afar with deadly precision.</p>
+    </div>
+    <div class="class-card">
+      <h3>Spy</h3>
+      <img src="https://static.wikia.nocookie.net/teamfortress/images/d/d0/Spy_3D.jpg" alt="Spy">
+      <p>Disguises as enemies, goes invisible, and backstabs for instant kills.</p>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <h2>Download Team Fortress 2</h2>
+  <p>Get the game free from Steam below:</p>
+  <p><a href="https://store.steampowered.com/app/440/Team_Fortress_2/" target="_blank" style="color: #00b0f4;">Download on Steam</a></p>
+</section>
+
+<section class="music-control">
+  <button onclick="playMusic()">▶️ Play TF2 Theme</button>
+  <audio id="tf2-music" loop>
+    <source src="https://cdn.cloudflare.steamstatic.com/apps/tf2/blog/images/posts/music/01%20Team%20Fortress%202.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</section>
+
+<footer>
+  <p>&copy; 2025 TF2 Fan Page | Not affiliated with Valve Corporation.</p>
+</footer>
+
+<script>
+  function playMusic() {
+    const audio = document.getElementById('tf2-music');
+    audio.play();
+  }
+</script>
+
+</body>
+</html>
